@@ -80,6 +80,7 @@ $app->get('/db/', function() use($app) {
       $names[] = $row;
     }
   
+    
     return $app['twig']->render('database.twig', array(
       'names' => $names
     ));
